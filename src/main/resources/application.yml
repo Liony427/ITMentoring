@@ -1,44 +1,76 @@
 # 서버 설정
 server:
+
   port: 8080
+
   servlet:
+
     context-path: /
+
     encoding:
+
       charset: UTF-8
 
  
 
 # 뷰리졸버 설정
+
 spring:
+
   mvc:
+
     view:
+
       prefix: /WEB-INF/views/
+
       suffix: .jsp
 
  
 
 # 배너 설정
+
   main:
+
     banner-mode: off
 
+    
+
     # 데이터 소스 설정
+
   datasource:
+
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/mysql?useSSL=false
-    username: springboot
-    password: springboot
+
+    url: jdbc:mysql://localhost:3306/mysql?useSSL=false&allowPublicKeyRetrieval=true
+
+    username: root
+
+    password: root
 
  
 
 # JPA 설정
+
   jpa:
+
     open-in-view: true
+
     database-platform: org.hibernate.dialect.H2Dialect
+
     show-sql: false
+
     hibernate:
+
       naming:
+
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-      ddl-auto: update
+
+      ddl-auto: create
+
       use-new-id-generator-mappings: false
+
     properties:
+
       hibernate.format_sql: true
+
+ 
