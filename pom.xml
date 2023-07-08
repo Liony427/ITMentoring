@@ -50,7 +50,7 @@
 		  </dependency>
 		  <!-- JSTL 라이브러리 -->
 
-    <dependency>
+   <dependency>
 
         <groupId>javax.servlet</groupId>
 
@@ -88,7 +88,7 @@
 
     <!-- jQuery 라이브러리 -->
 
-    <dependency>
+   <dependency>
 
         <groupId>org.webjars.bower</groupId>
 

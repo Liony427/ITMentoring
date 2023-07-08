@@ -61,5 +61,13 @@ public void deleteById(String id) {
 
 }
 
+public UserEntity selectUserByUserName(String username) {
+	UserEntity user = repository.findByUsername(username).orElseGet(() -> {
+		return null;
+	});
+	
+	return user;
+}
+
 }
 
