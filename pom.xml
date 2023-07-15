@@ -98,6 +98,23 @@
 
     </dependency>
 		  
+ <!-- Summernote 라이브러리 -->
+
+    <dependency>
+
+        <groupId>org.webjars</groupId>
+
+        <artifactId>summernote</artifactId>
+
+        <version>0.8.10</version>
+
+    </dependency>
+		  
+		  
+		  
+		  
+		  
+		  
 		  
 		  
 		  
